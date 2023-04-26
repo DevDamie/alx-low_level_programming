@@ -5,7 +5,7 @@
 	 * Return: 0
 	 */
 
-int main(char c)
+int main()
 
 {
 	_putchar('_');
