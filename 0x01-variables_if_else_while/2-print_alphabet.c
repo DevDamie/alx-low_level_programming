@@ -1,19 +1,20 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - Enyry point
+ * main - Entry point
  * Return: always 0 (success)
  */
 
 int main(void)
 {
-	int lowercase  = 'a';
+	char c = 'a';
 
-	while (lowercase <= 'z')
+	while (c <= 'z')
 	{
-		putchar(lowercase);
-		lowercase *= 1;
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
