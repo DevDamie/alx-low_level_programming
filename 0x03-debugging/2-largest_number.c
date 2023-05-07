@@ -13,23 +13,25 @@
 
 int largest_number(int a, int b, int c)
 {
-    int largest;
+	int largest;
 
-    srand(time(0));
-    a = rand(); b = rand(); c = rand ();
+	srand(time(0));
+	a = rand();
+	b = rand();
+	c = rand();
 
-    if (a > b && b > c)
-    {
-        largest = a;
-    }
-    else if (b > a && a > c)
-    {
-        largest = b;
-    }
-    else
-    {
-        largest = c;
-    }
+	if (a > b && b > c)
+	{
+	largest = a;
+	}
+	else if (b > a && a > c)
+	{
+	largest = b;
+	}
+	else
+	{
+	largest = c;
+	}
 
-    return (largest);
+	return (largest);
 }
