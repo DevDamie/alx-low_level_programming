@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_chessboard - function that locates a substring.
+ * print_chessboard - function that prints the chessboard
  * @a: pointer to chessboard.
  * Return: Void.
  */
