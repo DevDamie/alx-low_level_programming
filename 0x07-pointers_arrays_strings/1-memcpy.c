@@ -4,11 +4,11 @@
 void *memcpy(void *dest, const void *src, size_t n);
 
 /**
- ***_memcpy - function that fills memory with a constant byte.
- *@dest: poiter of char type
- *@src: integer
- *@n: unsigned int n
- *Return: @s char value
+ * _memcpy() function copies n bytes from memory area src to memory area dest
+ * @dest: pointer of char type
+ * @src: integer
+ * @n: unsigned int n
+ * Return: @s char value
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
