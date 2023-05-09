@@ -4,7 +4,7 @@
 void *memcpy(void *dest, const void *src, size_t n);
 
 /**
- * _memcpy() function copies n bytes from memory area src to memory area dest
+ * _memcpy - copies n bytes from memory area src to memory area dest
  * @dest: pointer of char type
  * @src: integer
  * @n: unsigned int n
