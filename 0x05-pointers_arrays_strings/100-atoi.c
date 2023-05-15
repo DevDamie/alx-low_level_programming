@@ -1,23 +1,26 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * _atoi - converts a string to an integer
- * @s: pointer of character
- * Return: integer
+ * @s: string input parameter
+ *
+ * Return: converted integer from string
  */
 
 int _atoi(char *s)
 {
-	int sum = 0;
+	unsigned int num = 0;
+	int sign = 1;
 
-	while (*s != 0)
-	{
-		/* printf("s = %d\n", *s); */
-		sum = _atoi(s + '0');
-		s++;
-		printf("sum = %d\n", sum);
-	}
-	printf("sum = %d\n", sum);
-	return (0);
+	do {
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+		else if (num > 0)
+			break;
+	} while (*s++);
+
+	return (num * sign);
 }
