@@ -6,15 +6,13 @@
  * @name: First member
  * @age: Second member
  * @owner: Third member
- *
- * Description: Longer description
  */
 
 struct dog
 {
-        char *name;
-        float age;
-        char *owner;
+	char *name;
+	float age;
+	char *owner;
 
 };
 
@@ -32,4 +30,4 @@ void free_dog(dog_t *d);
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
 
-#endif /* struct dog */
+#endif
